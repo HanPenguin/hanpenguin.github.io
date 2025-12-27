@@ -23,3 +23,15 @@ img {
   -webkit-user-drag: none;
   pointer-events: none;
 }
+["copy", "cut", "paste"].forEach(e =>
+  document.addEventListener(e, ev => ev.preventDefault())
+);
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    document.body.style.filter = "blur(8px)";
+  } else {
+    document.body.style.filter = "";
+  }
+});
+const wmText = `© Suzume / ${new Date().toLocaleDateString()}`;
+wm.textContent = wmText;
