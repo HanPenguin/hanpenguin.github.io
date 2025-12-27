@@ -23,3 +23,7 @@ img {
   -webkit-user-drag: none;
   pointer-events: none;
 }
+body {
+  -webkit-touch-callout: none;
+}
+
