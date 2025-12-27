@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.article-list li {
+  margin: 8px 0;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
