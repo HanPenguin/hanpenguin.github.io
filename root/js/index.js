@@ -13,7 +13,4 @@ fetch("articles.json")
       li.appendChild(link);
       list.appendChild(li);
     });
-  })
-  .catch(() => {
-    document.body.innerHTML = "記事一覧が読み込めないぺん";
   });
